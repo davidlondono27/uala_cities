@@ -1,0 +1,33 @@
+# Global variables
+default_scheme = "uala_cities-Dev"
+derived_data_path = "DerivedData"
+packages_dependencies_path = "SourcePackages"
+target_device = "iPhone 16"
+
+xcodes(
+  version: "16.3",
+  select_for_current_build_only: true
+)
+
+platform :ios do
+  desc "Run Tests"
+  lane :tests do |options|
+    build_configuration = "Debug"
+    skip_spm_resolution = options[:skip_spm_resolution].nil? ? false : options[:skip_spm_resolution]
+    fail_build = options[:fail_build].nil? ? true : options[:fail_build]
+    output_directory = "build/reports/tests/#{default_scheme}"
+
+    run_tests(
+      scheme: default_scheme,
+      device: target_device,
+      derived_data_path: derived_data_path,
+      cloned_source_packages_path: packages_dependencies_path,
+      skip_package_dependencies_resolution: skip_spm_resolution,
+      fail_build: fail_build,
+      code_coverage: true,
+      result_bundle: true,
+      output_directory: output_directory,
+      xcargs: "IS_FASTLANE=1 -skipPackagePluginValidation -skipMacroValidation"
+    )
+  end
+end

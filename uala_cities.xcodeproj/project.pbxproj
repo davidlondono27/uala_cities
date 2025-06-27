@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F64F6F82E0E4B20005A74CE /* Home in Frameworks */ = {isa = PBXBuildFile; productRef = 6F64F6F72E0E4B20005A74CE /* Home */; };
+		B51EDD782C5AD1DC00377356 /* UalaCitiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51EDD772C5AD1DC00377356 /* UalaCitiesApp.swift */; };
+		B51EDD7C2C5AD1DE00377356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51EDD7B2C5AD1DE00377356 /* Assets.xcassets */; };
+		B51EDD802C5AD1DE00377356 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51EDD7F2C5AD1DE00377356 /* Preview Assets.xcassets */; };
+		B51EDD8A2C5AD1DE00377356 /* UalaCitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51EDD892C5AD1DE00377356 /* UalaCitiesTests.swift */; };
+		B59FFC752C5BEEAB00B93A60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FFC742C5BEEAB00B93A60 /* AppDelegate.swift */; };
+		B59FFC7C2C5BF43000B93A60 /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = B59FFC7B2C5BF43000B93A60 /* Common */; };
+		B5D1E99C2C5BBF51001E8F5E /* uala_citiesUI in Resources */ = {isa = PBXBuildFile; fileRef = B5D1E99B2C5BBF51001E8F5E /* uala_citiesUI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B51EDD862C5AD1DE00377356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B51EDD6C2C5AD1DC00377356 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B51EDD732C5AD1DC00377356;
+			remoteInfo = uala_cities;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F64F6F92E0E4B33005A74CE /* Home */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Home; sourceTree = "<group>"; };
+		B51EDD742C5AD1DC00377356 /* uala_cities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uala_cities.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51EDD772C5AD1DC00377356 /* UalaCitiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UalaCitiesApp.swift; sourceTree = "<group>"; };
+		B51EDD7B2C5AD1DE00377356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B51EDD7D2C5AD1DE00377356 /* uala_cities.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = uala_cities.entitlements; sourceTree = "<group>"; };
+		B51EDD7F2C5AD1DE00377356 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B51EDD852C5AD1DE00377356 /* uala_citiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uala_citiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51EDD892C5AD1DE00377356 /* UalaCitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UalaCitiesTests.swift; sourceTree = "<group>"; };
+		B532D6C92C5C0AA700E02B3D /* Theme */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Theme; sourceTree = "<group>"; };
+		B58C7FD92C5BD7A200AD3506 /* Common */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Common; sourceTree = "<group>"; };
+		B58C7FDA2C5BD7A200AD3506 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
+		B58C7FE22C5BDF6700AD3506 /* DataLayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DataLayer; sourceTree = "<group>"; };
+		B58C7FE32C5BDF6700AD3506 /* DomainLayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DomainLayer; sourceTree = "<group>"; };
+		B59FFC742C5BEEAB00B93A60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B59FFC792C5BEF6000B93A60 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		B59FFC7A2C5BEF6B00B93A60 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		B59FFC7D2C5BF71800B93A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B59FFC842C5C03A900B93A60 /* uala_cities-Dev.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "uala_cities-Dev.xctestplan"; sourceTree = "<group>"; };
+		B5BE370E2C5BCEF600A29FA9 /* TestingUtilities */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TestingUtilities; sourceTree = "<group>"; };
+		B5D1E99B2C5BBF51001E8F5E /* uala_citiesUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = uala_citiesUI; sourceTree = "<group>"; };
+		B5D1E99D2C5BC344001E8F5E /* LocalizedStrings */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LocalizedStrings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B51EDD712C5AD1DC00377356 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59FFC7C2C5BF43000B93A60 /* Common in Frameworks */,
+				6F64F6F82E0E4B20005A74CE /* Home in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51EDD822C5AD1DE00377356 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B51EDD6B2C5AD1DC00377356 = {
+			isa = PBXGroup;
+			children = (
+				B59FFC852C5C05E200B93A60 /* Features */,
+				B5D1E99A2C5BBF51001E8F5E /* Foundation */,
+				B51EDD762C5AD1DC00377356 /* uala_cities */,
+				B51EDD882C5AD1DE00377356 /* uala_citiesTests */,
+				B51EDD752C5AD1DC00377356 /* Products */,
+				B59FFC762C5BEF3E00B93A60 /* Configuration */,
+				B5D1E99E2C5BC3D4001E8F5E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B51EDD752C5AD1DC00377356 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B51EDD742C5AD1DC00377356 /* uala_cities.app */,
+				B51EDD852C5AD1DE00377356 /* uala_citiesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B51EDD762C5AD1DC00377356 /* uala_cities */ = {
+			isa = PBXGroup;
+			children = (
+				B59FFC842C5C03A900B93A60 /* uala_cities-Dev.xctestplan */,
+				B59FFC7D2C5BF71800B93A60 /* Info.plist */,
+				B51EDD772C5AD1DC00377356 /* UalaCitiesApp.swift */,
+				B51EDD7B2C5AD1DE00377356 /* Assets.xcassets */,
+				B51EDD7D2C5AD1DE00377356 /* uala_cities.entitlements */,
+				B51EDD7E2C5AD1DE00377356 /* Preview Content */,
+				B59FFC742C5BEEAB00B93A60 /* AppDelegate.swift */,
+			);
+			path = uala_cities;
+			sourceTree = "<group>";
+		};
+		B51EDD7E2C5AD1DE00377356 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B51EDD7F2C5AD1DE00377356 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B51EDD882C5AD1DE00377356 /* uala_citiesTests */ = {
+			isa = PBXGroup;
+			children = (
+				B51EDD892C5AD1DE00377356 /* UalaCitiesTests.swift */,
+			);
+			path = uala_citiesTests;
+			sourceTree = "<group>";
+		};
+		B59FFC762C5BEF3E00B93A60 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				B59FFC782C5BEF5400B93A60 /* Development */,
+				B59FFC772C5BEF4E00B93A60 /* Production */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		B59FFC772C5BEF4E00B93A60 /* Production */ = {
+			isa = PBXGroup;
+			children = (
+				B59FFC7A2C5BEF6B00B93A60 /* Production.xcconfig */,
+			);
+			path = Production;
+			sourceTree = "<group>";
+		};
+		B59FFC782C5BEF5400B93A60 /* Development */ = {
+			isa = PBXGroup;
+			children = (
+				B59FFC792C5BEF6000B93A60 /* Development.xcconfig */,
+			);
+			path = Development;
+			sourceTree = "<group>";
+		};
+		B59FFC852C5C05E200B93A60 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6F64F6F92E0E4B33005A74CE /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		B5D1E99A2C5BBF51001E8F5E /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				B532D6C92C5C0AA700E02B3D /* Theme */,
+				B58C7FE22C5BDF6700AD3506 /* DataLayer */,
+				B58C7FE32C5BDF6700AD3506 /* DomainLayer */,
+				B58C7FD92C5BD7A200AD3506 /* Common */,
+				B58C7FDA2C5BD7A200AD3506 /* Networking */,
+				B5BE370E2C5BCEF600A29FA9 /* TestingUtilities */,
+				B5D1E99D2C5BC344001E8F5E /* LocalizedStrings */,
+				B5D1E99B2C5BBF51001E8F5E /* uala_citiesUI */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		B5D1E99E2C5BC3D4001E8F5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B51EDD732C5AD1DC00377356 /* uala_cities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B51EDD992C5AD1DE00377356 /* Build configuration list for PBXNativeTarget "uala_cities" */;
+			buildPhases = (
+				B51EDD702C5AD1DC00377356 /* Sources */,
+				B51EDD712C5AD1DC00377356 /* Frameworks */,
+				B51EDD722C5AD1DC00377356 /* Resources */,
+				B53B97D22C5C113820243FCE /* Alphabetize locales */,
+				B592BD412C5BEB2D00977064 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uala_cities;
+			packageProductDependencies = (
+				B59FFC7B2C5BF43000B93A60 /* Common */,
+				6F64F6F72E0E4B20005A74CE /* Home */,
+			);
+			productName = uala_cities;
+			productReference = B51EDD742C5AD1DC00377356 /* uala_cities.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B51EDD842C5AD1DE00377356 /* uala_citiesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B51EDD9C2C5AD1DE00377356 /* Build configuration list for PBXNativeTarget "uala_citiesTests" */;
+			buildPhases = (
+				B51EDD812C5AD1DE00377356 /* Sources */,
+				B51EDD822C5AD1DE00377356 /* Frameworks */,
+				B51EDD832C5AD1DE00377356 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B51EDD872C5AD1DE00377356 /* PBXTargetDependency */,
+			);
+			name = uala_citiesTests;
+			productName = uala_citiesTests;
+			productReference = B51EDD852C5AD1DE00377356 /* uala_citiesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B51EDD6C2C5AD1DC00377356 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				ORGANIZATIONNAME = uala_cities;
+				TargetAttributes = {
+					B51EDD732C5AD1DC00377356 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					B51EDD842C5AD1DE00377356 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = B51EDD732C5AD1DC00377356;
+					};
+				};
+			};
+			buildConfigurationList = B51EDD6F2C5AD1DC00377356 /* Build configuration list for PBXProject "uala_cities" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B51EDD6B2C5AD1DC00377356;
+			packageReferences = (
+				B58BE27D2C5C645200FA94B1 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+			);
+			productRefGroup = B51EDD752C5AD1DC00377356 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B51EDD732C5AD1DC00377356 /* uala_cities */,
+				B51EDD842C5AD1DE00377356 /* uala_citiesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B51EDD722C5AD1DC00377356 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51EDD802C5AD1DE00377356 /* Preview Assets.xcassets in Resources */,
+				B51EDD7C2C5AD1DE00377356 /* Assets.xcassets in Resources */,
+				B5D1E99C2C5BBF51001E8F5E /* uala_citiesUI in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51EDD832C5AD1DE00377356 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B53B97D22C5C113820243FCE /* Alphabetize locales */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Alphabetize locales";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/alphabetizer.sh\"\n";
+		};
+		B592BD412C5BEB2D00977064 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SWIFT_PACKAGE_DIR=\"${BUILD_DIR%Build/*}SourcePackages/artifacts\"\nSWIFTLINT_CMD=$(ls \"$SWIFT_PACKAGE_DIR\"/swiftlintplugins/SwiftLintBinary/SwiftLintBinary.artifactbundle/swiftlint-*/bin/swiftlint | head -n 1)\n\nif test -f \"$SWIFTLINT_CMD\" 2>&1\nthen\n    $SWIFTLINT_CMD --fix && $SWIFTLINT_CMD\nelse\n    echo \"warning: `swiftlint` command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B51EDD702C5AD1DC00377356 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B59FFC752C5BEEAB00B93A60 /* AppDelegate.swift in Sources */,
+				B51EDD782C5AD1DC00377356 /* UalaCitiesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51EDD812C5AD1DE00377356 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51EDD8A2C5AD1DE00377356 /* UalaCitiesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B51EDD872C5AD1DE00377356 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B51EDD732C5AD1DC00377356 /* uala_cities */;
+			targetProxy = B51EDD862C5AD1DE00377356 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B51EDD972C5AD1DE00377356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B59FFC792C5BEF6000B93A60 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B51EDD982C5AD1DE00377356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B59FFC7A2C5BEF6B00B93A60 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B51EDD9A2C5AD1DE00377356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = uala_cities/uala_cities.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"uala_cities/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = uala_cities/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.com.uala.uala-cities";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B51EDD9B2C5AD1DE00377356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = uala_cities/uala_cities.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"uala_cities/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = uala_cities/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.com.uala.uala-cities";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B51EDD9D2C5AD1DE00377356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.com.uala.uala_citiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uala_cities.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/uala_cities";
+			};
+			name = Debug;
+		};
+		B51EDD9E2C5AD1DE00377356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.com.uala.uala_citiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uala_cities.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/uala_cities";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B51EDD6F2C5AD1DC00377356 /* Build configuration list for PBXProject "uala_cities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51EDD972C5AD1DE00377356 /* Debug */,
+				B51EDD982C5AD1DE00377356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B51EDD992C5AD1DE00377356 /* Build configuration list for PBXNativeTarget "uala_cities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51EDD9A2C5AD1DE00377356 /* Debug */,
+				B51EDD9B2C5AD1DE00377356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B51EDD9C2C5AD1DE00377356 /* Build configuration list for PBXNativeTarget "uala_citiesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51EDD9D2C5AD1DE00377356 /* Debug */,
+				B51EDD9E2C5AD1DE00377356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B58BE27D2C5C645200FA94B1 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = exactVersion;
+				version = 0.55.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F64F6F72E0E4B20005A74CE /* Home */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Home;
+		};
+		B59FFC7B2C5BF43000B93A60 /* Common */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Common;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B51EDD6C2C5AD1DC00377356 /* Project object */;
+}

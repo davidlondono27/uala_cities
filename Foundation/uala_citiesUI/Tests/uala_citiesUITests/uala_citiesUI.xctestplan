@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "7241A76D-140E-42AB-B74C-635A9B4D054A",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Packages\/uala_citiesUI",
+        "identifier" : "uala_citiesUITests",
+        "name" : "uala_citiesUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
