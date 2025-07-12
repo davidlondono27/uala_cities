@@ -9,4 +9,5 @@
 import Combine
 
 protocol HomeViewModelProtocol: AnyObject, ObservableObject {
+    func onAppear()
 }

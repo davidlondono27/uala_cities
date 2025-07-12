@@ -15,8 +15,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/ashfurrow/Nimble-Snapshots", exact: "9.8.0"),
-        .package(url: "https://github.com/Quick/Quick.git", from: "7.6.2"),
-        .package(url: "https://github.com/SimplyDanny/SwiftLintPlugins", exact: "0.55.1")
+        .package(url: "https://github.com/Quick/Quick.git", from: "7.6.2")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -28,7 +27,7 @@ let package = Package(
                 "Quick"
             ],
             resources: [],
-            plugins: [.plugin(name: "SwiftLintBuildToolPlugin", package: "SwiftLintPlugins")]
+            plugins: []
         ),
         .testTarget(
             name: "TestingUtilitiesTests",

@@ -16,7 +16,9 @@ let package = Package(
     dependencies: [
         .package(path: "../TestingUtilities"),
         .package(path: "../Theme"),
-        .package(path: "../LocalizedStrings")
+        .package(path: "../LocalizedStrings"),
+        .package(path: "../DataLayer"),
+        .package(path: "../DomainLayer")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -25,7 +27,9 @@ let package = Package(
             name: "Home",
             dependencies: [
                 "Theme",
-                "LocalizedStrings"
+                "LocalizedStrings",
+                "DataLayer",
+                "DomainLayer"
             ],
             resources: [],
             plugins: []

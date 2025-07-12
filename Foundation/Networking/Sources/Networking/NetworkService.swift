@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct NetworkService {
+public struct NetworkService {
     /// The shared singleton instance of NetworkService.
-    static let shared = NetworkService()
+    public static let shared = NetworkService()
 
     /// Private initializer to enforce singleton pattern.
     private init() {}
@@ -32,7 +32,7 @@ struct NetworkService {
      print(response)
      ```
      */
-    func request<T: Decodable>(_ endpoint: APIEndpoint, as type: T.Type) async throws -> T {
+    public func request<T: Decodable>(_ endpoint: APIEndpoint, as type: T.Type) async throws -> T {
         // Perform the network request
         let (data, response) = try await URLSession.shared.data(for: endpoint.urlRequest)
 

@@ -18,10 +18,12 @@ struct HomeView<ViewModel>: View where ViewModel: HomeViewModelProtocol {
     }
 
     var body: some View {
-        Image.logo
-            .frame(width: 200)
-        Text(L10n.yourTextHere)
-//            .foregroundStyle(Color.uala)
+        VStack {
+            Image.logo
+                .frame(width: 200)
+            Text(L10n.yourTextHere)
+        }
+        .onAppear(perform: viewModel.onAppear)
     }
 }
 
