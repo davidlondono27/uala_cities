@@ -29,8 +29,8 @@ struct CityAPICoord: Codable {
 }
 
 extension CitiesAPIResponse {
-    func mapToModel() -> Cities {
-        Cities(
+    func mapToModel() -> City {
+        City(
             id: id,
             country: country,
             name: name,

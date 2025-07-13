@@ -16,7 +16,7 @@ public final class CitiesAPIRepository: CitiesRepository {
 
     public init() {}
 
-    public func getCities() async throws -> [Cities] {
+    public func getCities() async throws -> [City] {
         let endPoint = CitiesEndPoint.getCities
 
         let response = try await networkService.request(endPoint, as: [CitiesAPIResponse].self)

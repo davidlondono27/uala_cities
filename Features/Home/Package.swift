@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "Home",
     defaultLocalization: "es",
-    platforms: [.iOS(.v16)],
+    platforms: [.iOS("16.4")],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -15,6 +15,7 @@ let package = Package(
     ],
     dependencies: [
         .package(path: "../TestingUtilities"),
+        .package(path: "../Common"),
         .package(path: "../Theme"),
         .package(path: "../LocalizedStrings"),
         .package(path: "../DataLayer"),
@@ -26,6 +27,7 @@ let package = Package(
         .target(
             name: "Home",
             dependencies: [
+                "Common",
                 "Theme",
                 "LocalizedStrings",
                 "DataLayer",
