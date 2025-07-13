@@ -16,4 +16,6 @@ protocol HomeViewModelProtocol: AnyObject, ObservableObject {
 
     func onAppear()
     func didTapCleanAll()
+    func didTapFavorite(_ city: City)
+    func isFavorite(_ city: City) -> Bool
 }

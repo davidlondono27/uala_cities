@@ -14,7 +14,8 @@ import Foundation
 final class HomeViewModel: HomeViewModelProtocol {
     private var repository: CitiesRepository
     private var searchEngine: CitiesSearchEngine?
-    private var favorites: Set<Int> = []
+    private var userDefault: UserDefaultManaging = UserDefaultManager()
+    @Published private(set) var favorites: Set<Int>
     
     @Published var filteredCities: [City] = []
     @Published var filterText: String = "" {
@@ -28,6 +29,7 @@ final class HomeViewModel: HomeViewModelProtocol {
         repository: CitiesRepository = CitiesAPIRepository()
     ) {
         self.repository = repository
+        self.favorites = userDefault.getFavoriteCityIds()
     }
 
     func onAppear() {
@@ -48,7 +50,23 @@ final class HomeViewModel: HomeViewModelProtocol {
         }
     }
 
+    func isFavorite(_ city: City) -> Bool {
+        favorites.contains(city.id)
+    }
+
+    func didTapFavorite(_ city: City) {
+        if favorites.contains(city.id) {
+            favorites.remove(city.id)
+            userDefault.removeFavoriteCityId(city.id)
+        } else {
+            favorites.insert(city.id)
+            userDefault.setFavoriteCityId(city.id)
+        }
+        updateFilteredCities()
+    }
+
     private func updateFilteredCities() {
+        favorites = userDefault.getFavoriteCityIds()
         guard let searchEngine else {
             filteredCities = []
             return
