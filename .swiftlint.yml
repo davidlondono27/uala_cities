@@ -1,0 +1,14 @@
+disabled_rules: []
+
+excluded:
+  - Carthage
+  - Pods
+  - SourcePackages
+  - SourcePackages/checkouts
+  - SourcePackages/artifacts
+  - .build
+  - DerivedData
+
+included:
+  - Sources
+  - App

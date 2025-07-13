@@ -9,7 +9,7 @@
 import Foundation
 
 /// A protocol representing the essential properties and methods for defining an API endpoint.
-protocol APIEndpoint {
+public protocol APIEndpoint {
     /// The base URL of the API endpoint.
     var baseURL: URL { get }
 
@@ -17,7 +17,7 @@ protocol APIEndpoint {
     var path: String { get }
 
     /// The HTTP method to be used for the API request (e.g., "GET", "POST").
-    var method: String { get }
+    var method: HTTPMethod { get }
 
     /// The headers to be included in the API request.
     var headers: [String: String]? { get }
@@ -30,13 +30,13 @@ protocol APIEndpoint {
 }
 
 /// An extension of the APIEndpoint protocol to provide a default implementation for generating a URLRequest.
-extension APIEndpoint {
+public extension APIEndpoint {
     var urlRequest: URLRequest {
         // Create a URL by appending the path to the base URL.
         var request = URLRequest(url: baseURL.appendingPathComponent(path))
 
         // Set the HTTP method for the request.
-        request.httpMethod = method
+        request.httpMethod = method.rawValue
 
         // Add the headers to the request.
         request.allHTTPHeaderFields = headers
