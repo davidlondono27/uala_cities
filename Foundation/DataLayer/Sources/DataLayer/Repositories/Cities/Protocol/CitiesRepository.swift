@@ -10,5 +10,5 @@ import Foundation
 import DomainLayer
 
 public protocol CitiesRepository: AnyObject {
-    func getCities() async throws -> [Cities]
+    func getCities() async throws -> [City]
 }

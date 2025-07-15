@@ -1,1 +1,3 @@
-yourTextHere = "Tu texto aquí"; 
+citySearcher = "Buscador de ciudades:";
+searchACity = "Busca una ciudad";
+welcome = "Bienvenido";

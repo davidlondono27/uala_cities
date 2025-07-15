@@ -1,5 +1,5 @@
 //
-//  Cities.swift
+//  City.swift
 //  DomainLayer
 //
 //  Created by David Londono on 12/07/2025.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Cities {
+public struct City: Identifiable {
     public let id: Int
     public let country, name: String
     public let coordinates: CityCoordinate
