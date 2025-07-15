@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct City: Identifiable {
+public struct City: Identifiable, Hashable {
     public let id: Int
     public let country, name: String
     public let coordinates: CityCoordinate
@@ -26,4 +26,12 @@ public struct City: Identifiable {
     }
 }
 
+public extension City {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 
+    static func == (lhs: City, rhs: City) -> Bool {
+        lhs.id == rhs.id
+    }
+}
