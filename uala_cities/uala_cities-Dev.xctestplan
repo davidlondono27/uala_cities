@@ -1,0 +1,99 @@
+{
+  "configurations" : [
+    {
+      "id" : "1EDF6D9D-EF01-4040-9B3E-6E3741CE500C",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:Foundation\/Common",
+          "identifier" : "Common",
+          "name" : "Common"
+        },
+        {
+          "containerPath" : "container:Foundation\/DataLayer",
+          "identifier" : "DataLayer",
+          "name" : "DataLayer"
+        },
+        {
+          "containerPath" : "container:Foundation\/uala_citiesUI",
+          "identifier" : "uala_citiesUI",
+          "name" : "uala_citiesUI"
+        },
+        {
+          "containerPath" : "container:Foundation\/Networking",
+          "identifier" : "Networking",
+          "name" : "Networking"
+        },
+        {
+          "containerPath" : "container:Foundation\/DomainLayer",
+          "identifier" : "DomainLayer",
+          "name" : "DomainLayer"
+        },
+        {
+          "containerPath" : "container:Features\/FeatureDemo",
+          "identifier" : "FeatureDemo",
+          "name" : "FeatureDemo"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Foundation\/Networking",
+        "identifier" : "NetworkingTests",
+        "name" : "NetworkingTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Foundation\/TestingUtilities",
+        "identifier" : "TestingUtilitiesTests",
+        "name" : "TestingUtilitiesTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Foundation\/Common",
+        "identifier" : "CommonTests",
+        "name" : "CommonTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Features\/Home",
+        "identifier" : "HomeTests",
+        "name" : "HomeTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Foundation\/DataLayer",
+        "identifier" : "DataLayerTests",
+        "name" : "DataLayerTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Foundation\/DomainLayer",
+        "identifier" : "DomainLayerTests",
+        "name" : "DomainLayerTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Foundation\/uala_citiesUI",
+        "identifier" : "uala_citiesUITests",
+        "name" : "uala_citiesUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

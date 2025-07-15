@@ -1,0 +1,10 @@
+input_dir: Sources/LocalizedStrings/Resources/
+output_dir: ${DERIVED_SOURCES_DIR}
+
+strings:
+  inputs: es.lproj
+  outputs:
+    templateName: structured-swift5
+    params:
+      publicAccess: true
+    output: Strings+Generated.swift

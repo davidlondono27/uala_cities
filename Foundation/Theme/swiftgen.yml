@@ -1,0 +1,37 @@
+input_dir: Sources/Theme/Resources/
+output_dir: ${DERIVED_SOURCES_DIR}
+
+xcassets:
+  - inputs: Colors.xcassets
+    outputs:
+      templatePath: SwiftgenCustomTemplates/custom-xcassets-template-colors
+      output: Colors.swift
+      params:
+        publicAccess: true
+
+  - inputs: Icons.xcassets
+    outputs:
+      templatePath: SwiftgenCustomTemplates/custom-xcassets-template-icons
+      output: Icons.swift
+      params:
+        publicAccess: true
+        enumName: Icon
+        imageTypeName: IconAsset
+        imageAliasName: IconAssetImageTypeAlias
+
+  - inputs: Images.xcassets
+    outputs:
+      templatePath: SwiftgenCustomTemplates/custom-xcassets-template-images
+      output: Images.swift
+      params:
+        publicAccess: true
+
+fonts:
+  - inputs: Fonts
+    outputs:
+      templateName: swift5
+      output: Fonts.swift
+      params:
+        publicAccess: true
+        enumName: Fonts
+        fontAliasName: FontsTypeAlias

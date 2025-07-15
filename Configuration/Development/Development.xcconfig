@@ -1,0 +1,9 @@
+//
+//  Development.xcconfig
+//  uala_cities
+//
+//  Created by David Londono on 26/06/2025.
+//  Copyright © 2025 uala_cities. All rights reserved.
+//
+
+API_BASE_URL = https:/$()/gist.githubusercontent.com
