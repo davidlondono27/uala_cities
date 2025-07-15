@@ -16,6 +16,7 @@ final class HomeViewModel: HomeViewModelProtocol {
     private var searchEngine: CitiesSearchEngine?
     private var userDefault: UserDefaultManaging = UserDefaultManager()
     @Published private(set) var favorites: Set<Int>
+    @Published var selectedCity: City?
     
     @Published var filteredCities: [City] = []
     @Published var filterText: String = "" {

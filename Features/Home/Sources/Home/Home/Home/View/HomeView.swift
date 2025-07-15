@@ -19,54 +19,38 @@ struct HomeView<ViewModel>: View where ViewModel: HomeViewModelProtocol {
     }
 
     var body: some View {
-        VStack(spacing: .homeCommonSpacing) {
-            HStack(spacing: .zero) {
-                Spacer()
-                Button {
-                    viewModel.showOnlyFavorites.toggle()
-                } label: {
-                    Image(systemName: "heart\(viewModel.showOnlyFavorites ? ".fill" : "")")
+        NavigationSplitView {
+            List(viewModel.filteredCities, selection: $viewModel.selectedCity) { city in
+                cityButton(city)
+                    .tag(city)
+            }
+            .searchable(text: $viewModel.filterText, placement: .sidebar)
+            .listStyle(.plain)
+            .navigationTitle(L10n.citySearcher)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Image.logo
                         .resizable()
                         .scaledToFit()
-                        .frame(width: .favoriteIconSize)
-                        .foregroundColor(.red)
+                        .frame(width: .logoWidth)
                 }
-            }
-            Image.logo
-                .resizable()
-                .scaledToFit()
-                .frame(width: .logoWidth)
-            VStack(spacing: .homeCommonSpacing) {
-                Text(L10n.welcome)
-                    .font(.title3)
-                Text(L10n.citySearcher)
-                    .font(.body)
-            }
-            VStack(spacing: .homeCommonSpacing) {
-                HStack(spacing: .zero) {
-                    TextField(
-                        "",
-                        text: $viewModel.filterText,
-                        prompt: Text(L10n.searchACity)
-                    )
+                ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        viewModel.didTapCleanAll()
+                        viewModel.showOnlyFavorites.toggle()
                     } label: {
-                        Image(systemName: "x.circle.fill")
+                        Image(systemName: "heart\(viewModel.showOnlyFavorites ? ".fill" : "")")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: .eraseIconSize)
+                            .frame(width: .favoriteIconSize)
+                            .foregroundColor(.red)
                     }
                 }
-                List(viewModel.filteredCities) { city in
-                    cityButton(city)
-                }
-                .listStyle(.plain)
             }
+        } detail: {
+            MapView(city: $viewModel.selectedCity)
         }
-        .padding(.horizontal, 24)
-        .padding(.vertical, 12)
         .onAppear(perform: viewModel.onAppear)
+        .navigationSplitViewStyle(.balanced)
     }
 
     @ViewBuilder
@@ -83,12 +67,14 @@ struct HomeView<ViewModel>: View where ViewModel: HomeViewModelProtocol {
                     .frame(width: .favoriteIconSize)
                     .foregroundColor(.red)
             }
+            .buttonStyle(BorderlessButtonStyle())
         }
+        .contentShape(Rectangle())
     }
 }
 
 private extension CGFloat {
-    static let logoWidth: CGFloat = 150
+    static let logoWidth: CGFloat = 100
     static let eraseIconSize: CGFloat = 16
     static let favoriteIconSize: CGFloat = 16
     static let homeCommonSpacing: CGFloat = 12
@@ -97,4 +83,3 @@ private extension CGFloat {
 #Preview {
     HomeView(viewModel: HomeViewModel())
 }
-	
